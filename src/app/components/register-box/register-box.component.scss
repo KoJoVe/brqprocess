@@ -1,0 +1,16 @@
+@import '../../../styles.scss';
+
+.bg {
+  box-sizing: border-box;
+  padding-top: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.center {
+  text-align: center;
+}

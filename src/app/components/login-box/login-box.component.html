@@ -1,0 +1,12 @@
+<div class="container">
+  <card-component>
+    <h1>Bem Vindo</h1>
+    <h2>Faça login ou registre-se para continuar</h2>
+    <field-component [name]="'Usuário'" [key]="'username'" (fieldChange)="updateValue($event)"></field-component>
+    <field-component [name]="'Senha'" [key]="'password'" [mask]="true" (fieldChange)="updateValue($event)"></field-component>
+    <div class="center">
+      <button-component (buttonClick)="login()" [alternate]="true" [title]="'Login'"></button-component>
+      <button-component (buttonClick)="register()" [title]="'Registrar'"></button-component>
+    </div>
+  </card-component>
+</div>

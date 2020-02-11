@@ -1,0 +1,28 @@
+<list-item-component *ngIf="adding" (close)="refresh()"></list-item-component>
+
+<div class="row">
+  <div class="col">
+    Id
+  </div>
+  <div class="col">
+    Id Produto
+  </div>
+  <div class="col">
+    Descrição Produto
+  </div>
+  <div class="col">
+    Preço
+  </div>
+  <div class="col">
+    Quantidade
+  </div>
+  <div class="col">
+    Data de Criação
+  </div>
+  <div class="col">
+    Id do Usuário
+  </div>
+</div>
+<list-row-component *ngFor="let item of items" [item]="item" (delete)="refresh()"></list-row-component>
+
+<button-component [title]="'Adicionar Solicitação'" (buttonClick)="adding = true"></button-component>

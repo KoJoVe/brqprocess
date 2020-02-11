@@ -1,0 +1,5 @@
+<div>
+  <label *ngIf="name" for="field">{{name}}</label>
+  <br *ngIf="name" />
+  <input (input)="emitFieldValue($event)" [type]="mask ? 'password' : 'text'" id="field" name="field"><br><br>
+</div>

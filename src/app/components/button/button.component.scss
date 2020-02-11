@@ -1,0 +1,24 @@
+@import '../../../styles.scss';
+
+div {
+  display: inline-block;
+}
+
+input {
+  -webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+  box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+
+  font-size: $small-font-size;
+  border: none;
+
+  background: $light-color;
+  color: $dark-color;
+  margin: 10px;
+  padding: 10px;
+}
+
+.alternate {
+  background: $dark-color;
+  color: $light-color;
+}

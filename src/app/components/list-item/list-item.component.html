@@ -1,0 +1,13 @@
+<div class="bg">
+  <card-component>
+    <h2>Adicionar Solicitação</h2>
+    <field-component [name]="'Id do produto'" [key]="'productId'" (fieldChange)="updateValue($event)"></field-component>
+    <field-component [name]="'Descrição do produto'" [key]="'productDescription'" (fieldChange)="updateValue($event)"></field-component>
+    <field-component [name]="'Quantidade'" [key]="'quantity'" (fieldChange)="updateValue($event)"></field-component>
+    <field-component [name]="'Preço'" [key]="'price'" (fieldChange)="updateValue($event)"></field-component>
+    <div class="center">
+      <button-component [title]="'Adicionar'" [alternate]="true" (buttonClick)="add()"></button-component>
+      <button-component [title]="'Cancelar'" (buttonClick)="cancel()"></button-component>
+    </div>
+  </card-component>
+</div>

@@ -1,0 +1,13 @@
+<div class="container">
+  <card-component>
+    <h2>Por favor, preencha seus dados para continuar</h2>
+    <field-component [name]="'Primeiro Nome'" [key]="'firstname'" (fieldChange)="updateValue($event)"></field-component>
+    <field-component [name]="'Último Nome'" [key]="'lastname'" (fieldChange)="updateValue($event)"></field-component>
+    <field-component [name]="'Usuário'" [key]="'username'" (fieldChange)="updateValue($event)"></field-component>
+    <field-component [name]="'Senha'" [key]="'password'" [mask]="true" (fieldChange)="updateValue($event)"></field-component>
+    <div class="center">
+      <button-component (buttonClick)="register()" [alternate]="true" [title]="'Registrar'"></button-component>
+      <button-component (buttonClick)="back()" [title]="'Voltar'"></button-component>
+    </div>
+  </card-component>
+</div>

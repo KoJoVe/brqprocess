@@ -1,0 +1,23 @@
+<div *ngIf="item" class="row">
+  <div class="col">
+    {{item.id}}
+  </div>
+  <div class="col">
+    {{item.productId}}
+  </div>
+  <div class="col">
+    {{item.productDescription}}
+  </div>
+  <div class="col">
+    {{item.price}}
+  </div>
+  <div class="col">
+    {{item.quantity}}
+  </div>
+  <div *ngIf="item.createDate" class="col">
+    {{item.createDate | date: 'dd/MM/yyyy'}}
+  </div>
+  <div class="col" *ngIf="userId === item.userId">
+    <button-component [title]="'Excluir'" [alternate]="true" (buttonClick)="removeItem(item.id)"></button-component>
+  </div>
+</div>

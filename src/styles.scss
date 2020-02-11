@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+$small-font-size: 1.1em;
+$default-font-size: 1.4em;
+$large-font-size: 1.7em;
+
+$light-color: #fff;
+$dark-color: #333;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.row {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 30px 10px;
+  display: flex;
+}
+
+.col {
+  width: 14.20%;
+  float: left;
+}
+
+.bg {
+  color: $dark-color;
+  background: rgba($color: #FFF, $alpha: 0.75);
+  z-index: 999;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}

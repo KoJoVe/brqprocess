@@ -1,0 +1,6 @@
+<div *ngIf="message" class="bg">
+  <card-component>
+    <h2>{{message}}</h2>
+    <button-component [title]="'Ok'" (buttonClick)="closeModal()"></button-component>
+  </card-component>
+</div>
